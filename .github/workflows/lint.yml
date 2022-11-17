@@ -12,4 +12,25 @@ jobs:
           npm install standard --global
       - name: Check style for Main.js
         run: |
-          standard docs-web/src/main/webapp/src/app/docs/controller
+          standard docs-web/src/main/webapp/src/app/docs/controller/Main.js
+      - name: Check style for Login.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/Login.js
+      - name: Check style for Footer.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/Footer.js
+      - name: Check style for ModalFeedback.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/ModalFeedback.js
+      - name: Check style for ModalImport.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/ModalImport.js
+      - name: Check style for ModalPasswordLost.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/ModalPasswordLost.js
+      - name: Check style for Navigation.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/Navigation.js
+      - name: Check style for PasswordReset.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/PasswordReset.js
