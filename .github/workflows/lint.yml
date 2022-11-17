@@ -12,4 +12,4 @@ jobs:
           npm install standard --global
       - name: Check style for Main.js
         run: |
-          standard docs-web/src/main/webapp/src/app/docs/controller/Main.js
+          standard docs-web/src/main/webapp/src/app/docs/controller
