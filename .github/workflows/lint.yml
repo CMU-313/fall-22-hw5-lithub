@@ -1,12 +1,15 @@
 on: [push, pull_request]
-name: Main
+name: Style
 jobs:
   standardjs:
     name: StandardJs
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: StandardJs
-      uses: docker://jopereyral/standardjs-action
-      with:
-        args: --fix
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install standard
+        run: |
+          npm install standard --global
+      - name: Check style for Main.js
+        run: |
+          standard docs-web/src/main/webapp/src/app/docs/controller/Main.js
